@@ -22,6 +22,7 @@ protocol VirtualContentController: ARSCNViewDelegate {
 enum VirtualContentType: Int {
     case head, robotHead
     
+    #warning("add new models here before using")
     func makeController() -> VirtualContentController {
         switch self {
             
